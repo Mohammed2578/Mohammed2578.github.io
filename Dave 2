@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html> 
-    <head>
-        <title><strong>Dave Ashkanazy</strong></title>
-    </head>
-    <body>
-        <h1>The Life Of Dave Ashkanazy</h1> 
-        <ul>Born Decemeber 24 2010</ul>
-        <ul>5'3 130 pound man</ul>
-        <ul>Orders a big mac combo and big mac sauce on the side</ul>
-        <ul>Can not be out longer than 7:00</ul>
-    </body>
-</htm1>
+<head>
+    <title>Dave Ashkanazy</title>
+</head>
+<body>
+    <h1>The Life Of Dave Ashkanazy</h1> 
+    <ul>
+        <li>Born December 24, 2010</li>
+        <li>5'3" 130 pound man</li>
+        <li>Orders a Big Mac combo and Big Mac sauce on the side</li>
+        <li>Cannot be out longer than 7:00</li>
+    </ul>
+</body>
+</html>
