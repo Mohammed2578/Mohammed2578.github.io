@@ -6,3 +6,9 @@ h1 {
   font-size: 1rem;
   text-decoration: underline;
 }
+
+p {
+  color: blueviolet;
+  font-size: 1rem;
+  text-decoration: underline;
+}
