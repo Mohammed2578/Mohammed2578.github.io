@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--  FIXED: The meta tag was missing a closing bracket before 'content'. 
+       Without it, the browser can’t parse the viewport properly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frogs of the Rainforest</title>
+
+  <!--  FIXED: The stylesheet link was missing a file extension (.css). 
+       Without it, the browser won’t find or apply the stylesheet. -->
+  <link rel="stylesheet" href="frogs.css">
+</head>
+
+<body>
+  <div id="topbar">
+    <h1>🐸 Frogs of the Rainforest</h1>
+    <h1>Mohammed</h1>
+  </div>
+
+  <div class="panel">
+    <!--  FIXED: The <h2> tag was not closed properly. 
+         Without the closing </h2>, the browser treats everything after as heading text. -->
+    <h2>Meet the Frogs</h2>
+    <p>Frogs are incredible amphibians that live on every continent except Antarctica. Their
+    smooth, moist skin helps them breathe through it.</p>
+  </div>
+
+  <!--  FIXED: The 'floss' attribute is invalid. It should be 'class'. 
+       Invalid attributes are ignored by browsers, breaking styling and structure. -->
+  <div class="panel">
+    <h2>Life Cycle</h2>
+    <p>Frogs begin life as eggs in water, hatch into tadpoles, and grow legs as they transform
+    into adult frogs. This is called metamorphosis.</p>
+
+    <div id="pond">
+      <p>Here’s a “pond” — the parent container.</p>
+
+      <div id="tadpole">
+        <p>I'm positioned</p>
+        <!--  FIXED: Added closing </p> and proper <strong> tag. 
+             The previous version had mismatched and misspelled tags (‘strong’ missing or wrong).
+             Invalid markup breaks document flow and can stop styles from applying correctly. -->
+        <p><strong>absolutely</strong> within my parent!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Behavior</h2>
+    <p>Many frogs are nocturnal. They use sticky tongues to catch insects and call loudly to
+    attract mates.</p>
+
+    <div id="fun-fact">
+      <!--  FIXED: The <strong> tag was missing a closing </strong>. 
+           Without closing it, the entire section after would appear bold unintentionally. -->
+      <p><strong>Fun Fact:</strong> Some frogs can leap more than 20 times their body length!</p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>© 2025 Frogs of the Rainforest</p>
+  </div>
+</body>
+</html>
