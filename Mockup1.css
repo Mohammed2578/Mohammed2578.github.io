@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+#menu-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#menu-options {
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#menu-options a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+
+#menu-options a:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: red;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem;
+  justify-content: center; /* centers the grid horizontally */
+  align-items: center;     /* centers the grid vertically */
+  padding: 1rem;
+}
+
+.grid-item img {
+  width: 250px;       /* Fixed width */
+  height: 180px;      /* Fixed height */
+  object-fit: cover;  /* Ensures image fills the box without distortion */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+}
+
+.grid-item img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
