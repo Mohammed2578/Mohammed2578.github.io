@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Made in Mexico Restaurant & Cantina</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <button id="menu-button">Menu</button>
+    <nav id="menu-options" class="hidden">
+      <a href="location.html">location</a>
+      <a href="about us.html">about us</a>
+      <a href="promtion.html">promotion</a>
+      <a href="menu.html">menu</a>
+    </nav>
+     <img src="https://img1.wsimg.com/isteam/ip/d6737681-56c4-49f6-9974-8f0cb0215041/MADE%20IN%20MEXICO%20TOUCH%20BISTRO%20LOGO.jpg/:/rs=w:406,h:109,cg:true,m/cr=w:406,h:109/qt=q:95" alt="Enchiladas with mole sauce" 
+  </header>
+
+  <main class="grid-container">
+    <div class="grid-item" id="enchiladas">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKyynkERCTcdM2Ymh8juwh-n20fhUjF1xAg&s" alt="Enchiladas with mole sauce" />
+    </div>
+    <div class="grid-item" id="cantina">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/2c/be/d1/photo3jpg.jpg" alt="La Cantina bar interior" />
+    </div>
+    <div class="grid-item" id="combo">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/2c/be/d0/photo2jpg.jpg" alt="Table with Mexican combo dishes" />
+    </div>
+    <div class="grid-item" id="nachos">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FFsHhFWqll92RzCROk1mxFLVq-hvP5BCxw&s" alt="Group enjoying nachos" />
+    </div>
+  </main>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const menuOptions = document.getElementById('menu-options');
+
+    menuButton.addEventListener('click', () => {
+      menuOptions.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
