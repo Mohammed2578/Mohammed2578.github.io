@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px ,10px ,10px;
+  border: solid red;
+  text-align: center;
+  position: relative;
+  width: 10%;   /* full width instead of 10% */
+  margin: auto;     /* remove auto centering */
+  
+}
+
+#menu-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem; /* stays top left */
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin:0;
+}
+
+#menu-options {
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem; /* dropdown aligned left */
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#menu-options a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+
+#menu-options a:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.location-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
