@@ -1,10 +1,11 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f8f8;
+  background-color: black; /* FIXED */
   color: #333;
 }
 
+/* HEADER */
 header {
   background-color: #000;
   color: #fff;
@@ -13,73 +14,73 @@ header {
   position: relative;
 }
 
-#menu-button {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  cursor: pointer;
+/* MENU BUTTON */
+/* ===  TOP-RIGHT NAV BAR === */
+.navbar {
+  width: 100%;
+  background: #111;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
 }
 
-#menu-options {
-  position: absolute;
-  top: 3.5rem;
-  left: 1rem;
-  background-color: white;
-  border: 1px solid #ccc;
+.navbar ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  z-index: 1000;
+  justify-content: flex-end; /* pushes buttons right */
+  gap: 40px;
+  margin: 0;
+  padding: 0 40px;
 }
 
-#menu-options a {
-  padding: 0.5rem 1rem;
+.navbar a {
+  color: red;
+  font-size: 26px;
   text-decoration: none;
-  color: #000;
-  border-bottom: 1px solid #eee;
+  font-family: "Brush Script MT", cursive;
+  transition: 0.3s ease;
 }
 
-#menu-options a:hover {
-  background-color: #f0f0f0;
+.navbar a:hover {
+  color: white;
+  text-shadow: 0 0 10px red;
 }
 
-.hidden {
-  display: none;
+/* Push content downward so nav doesn't cover it */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+  padding-top: 80px; /* makes room for fixed navbar */
 }
 
+}
+
+/* TITLE STYLE */
 h1 {
   margin: 0;
   font-size: 1.8rem;
   color: red;
 }
 
+/* IMAGE GRID */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 0.5rem;
-  justify-content: center; /* centers the grid horizontally */
-  align-items: center;     /* centers the grid vertically */
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
+/* IMAGE STYLE */
 .grid-item img {
-  width: 250px;       /* Fixed width */
-  height: 180px;      /* Fixed height */
-  object-fit: cover;  /* Ensures image fills the box without distortion */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-}
-
-.grid-item img {
-  max-width: 250px;
-  height: auto;
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
