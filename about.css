@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: 'Arial Black', sans-serif;
+  color: #e73232;
+}
+
+.about-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.about-title {
+  color: #e73232;
+  font-size: 45px;
+  border: 3px solid #e73232;
+  padding: 6px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.about-box {
+  border: 3px solid #e73232;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.about-box p {
+  font-size: 28px;
+  line-height: 1.6;
+  font-family: 'Arial Black', sans-serif;
+  margin: 0;
+}
+
+
+/*  NAV BAR — MATCHING STYLE */
+
+
+.navbar {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  padding-right: 40px;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* right side */
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #e73232;
+  font-size: 28px;
+  text-decoration: none;
+  font-family: 'Brush Script MT', cursive;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: white;
+  text-shadow: 0 0 10px red;
+}
