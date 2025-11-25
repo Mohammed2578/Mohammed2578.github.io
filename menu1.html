@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: #e73232;
+}
+
+.menu-wrapper {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.title-large {
+  font-family: "Brush Script MT", cursive;
+  font-size: 110px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.title-sides {
+  font-family: "Brush Script MT", cursive;
+  font-size: 70px;
+  margin-left: 120px;
+}
+
+.angled-logo {
+  position: relative;
+  width: 350px;
+}
+
+.angled-bg {
+  width: 100%;
+}
+
+.logo-img {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  width: 280px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 70%;
+  margin-left: auto;
+  font-size: 35px;
+  row-gap: 12px;
+}
+
+.sides-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 260px;
+  margin-left: 50px;
+  font-size: 32px;
+  row-gap: 10px;
+}
+
+.drinks-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 70%;
+  margin-left: auto;
+  font-size: 35px;
+  row-gap: 12px;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  right: 120px;
+  top: 580px;
+  text-align: center;
+}
+
+.arrow-img {
+  width: 120px;
+}
+
+.arrow-text {
+  font-size: 28px;
+  margin-top: -20px;
+}
+
+.wood-bar {
+  width: 120%;
+  height: 50px;
+  margin: auto;
+}
+.wood-bar {
+  height: 50px;
+  width: 120%;
+  object-fit: cover;
+  object-position: top center;
+  margin: auto;
+}
+
+/* === NAVIGATION BAR (TOP RIGHT) === */
+.navbar {
+  width: 100%;
+  background: #111;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* Move nav items to the right */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;   /* ⬅ RIGHT SIDE */
+  gap: 40px;
+  margin: 0;
+  padding: 0 40px;             /* right padding */
+}
+
+.navbar a {
+  color: red;
+  font-size: 26px;
+  text-decoration: none;
+  font-family: "Brush Script MT", cursive;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: white;
+  text-shadow: 0 0 10px red;
+}
